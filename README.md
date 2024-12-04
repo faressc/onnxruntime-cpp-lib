@@ -21,3 +21,9 @@ Then inside the root of the onnxruntime repository, run the following command to
 ```bash
 cmake --install build/Linux/Release/ --prefix "/root/onnxruntime-cpp-lib/onnxruntime-1.19.2-Linux-armv7l" 
 ```
+
+Then use the following command to compress the library. Zip will break the symbolic links, so use tar instead.
+
+```bash
+tar -zcvf onnxruntime-1.19.2-Linux-armv7l.tar.gz onnxruntime-1.19.2-Linux-armv7l
+```
